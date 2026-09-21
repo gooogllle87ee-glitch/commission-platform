@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>創作者 A｜委託平台</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      height: 60px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .profile {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin: 0 0 10px;
+    }
+
+    .profile p {
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .works-title {
+      margin: 30px 0 15px;
+      font-size: 20px;
+    }
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .work {
+      border: 1px solid #ddd;
+      min-height: 150px;
+      padding: 15px;
+    }
+
+    .work-image {
+      height: 100px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .work p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .contact {
+      width: 100%;
+      margin-top: 30px;
+      height: 45px;
+      background: #222;
+      color: white;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+      .works {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin-left: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">委託平台</div>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="commissions.html">找委託</a>
+    <a href="post.html">發布委託</a>
+    <a href="creators.html">找創作者</a>
+    <a href="#">登入</a>
+  </nav>
+</header>
+
+<main>
+
+  <a class="back" href="creators.html">← 返回創作者列表</a>
+
+  <section class="profile">
+
+    <div class="avatar"></div>
+
+    <h1>創作者 A</h1>
+
+    <p>插畫・角色設計</p>
+
+    <p>
+      接受角色立繪、人物設計等委託。
+      可以討論需求與風格。
+    </p>
+
+  </section>
+
+  <h2 class="works-title">作品</h2>
+
+  <div class="works">
+
+    <div class="work">
+      <div class="work-image"></div>
+      <p>角色立繪</p>
+    </div>
+
+    <div class="work">
+      <div class="work-image"></div>
+      <p>人物設計</p>
+    </div>
+
+    <div class="work">
+      <div class="work-image"></div>
+      <p>插畫作品</p>
+    </div>
+
+  </div>
+
+  <button class="contact">委託這位創作者</button>
+
+</main>
+
+</body>
+</html>
