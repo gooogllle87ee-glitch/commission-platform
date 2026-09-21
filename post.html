@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>發布委託｜委託平台</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      height: 60px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0 0 30px;
+    }
+
+    .field {
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #bbb;
+      font-size: 14px;
+      background: white;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .upload {
+      border: 1px dashed #aaa;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .upload input {
+      border: none;
+      padding: 0;
+    }
+
+    #preview {
+      display: none;
+      max-width: 100%;
+      max-height: 400px;
+      margin: 20px auto 0;
+    }
+
+    .submit {
+      width: 100%;
+      margin-top: 10px;
+      background: #222;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">委託平台</div>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="commissions.html">找委託</a>
+    <a href="post.html">發布委託</a>
+    <a href="#">找創作者</a>
+    <a href="#">登入</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>發布委託</h1>
+
+  <div class="field">
+    <label>委託標題</label>
+    <input type="text" placeholder="例如：角色立繪">
+  </div>
+
+  <div class="field">
+    <label>分類</label>
+    <select>
+      <option>插畫</option>
+      <option>設計</option>
+      <option>寫作</option>
+      <option>配音</option>
+      <option>影片</option>
+      <option>其他</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>預算</label>
+    <input type="number" placeholder="例如：1000">
+  </div>
+
+  <div class="field">
+    <label>委託內容</label>
+    <textarea placeholder="請描述你想委託的內容、需求、規格等"></textarea>
+  </div>
+
+  <div class="field">
+    <label>參考圖片</label>
+
+    <div class="upload">
+      <input type="file" id="imageInput" accept="image/*">
+      <img id="preview" alt="圖片預覽">
+    </div>
+  </div>
+
+  <button class="submit">發布委託</button>
+
+</main>
+
+<script>
+  const imageInput = document.getElementById("imageInput");
+  const preview = document.getElementById("preview");
+
+  imageInput.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+      preview.src = URL.createObjectURL(file);
+      preview.style.display = "block";
+    }
+  });
+</script>
+
+</body>
+</html>
