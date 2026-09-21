@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>找創作者｜委託平台</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      height: 60px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 35px 20px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 20px;
+    }
+
+    .search {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+
+    .search input {
+      flex: 1;
+      height: 42px;
+      padding: 0 12px;
+      border: 1px solid #bbb;
+      font-size: 14px;
+    }
+
+    button {
+      height: 42px;
+      padding: 0 20px;
+      border: 1px solid #222;
+      background: #222;
+      color: white;
+      cursor: pointer;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .creator {
+      display: block;
+      border: 1px solid #ddd;
+      padding: 20px;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .creator:hover {
+      background: #f7f7f7;
+    }
+
+    .avatar {
+      width: 70px;
+      height: 70px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    .creator h2 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .creator p {
+      margin: 5px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .list {
+        grid-template-columns: 1fr;
+      }
+
+      nav a {
+        margin-left: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">委託平台</div>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="commissions.html">找委託</a>
+    <a href="post.html">發布委託</a>
+    <a href="creators.html">找創作者</a>
+    <a href="#">登入</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>找創作者</h1>
+
+  <div class="search">
+    <input type="text" placeholder="搜尋創作者">
+    <button>搜尋</button>
+  </div>
+
+  <div class="list">
+
+    <a class="creator" href="creator.html">
+      <div class="avatar"></div>
+      <h2>創作者 A</h2>
+      <p>插畫・角色設計</p>
+      <p>接案中</p>
+    </a>
+
+    <a class="creator" href="creator.html">
+      <div class="avatar"></div>
+      <h2>創作者 B</h2>
+      <p>Logo・平面設計</p>
+      <p>接案中</p>
+    </a>
+
+    <a class="creator" href="creator.html">
+      <div class="avatar"></div>
+      <h2>創作者 C</h2>
+      <p>影片剪輯・動畫</p>
+      <p>接案中</p>
+    </a>
+
+  </div>
+
+</main>
+
+</body>
+</html>
