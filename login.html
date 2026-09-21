@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入｜委託平台</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      height: 60px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 420px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .field {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      height: 44px;
+      padding: 0 12px;
+      border: 1px solid #bbb;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      height: 44px;
+      margin-top: 5px;
+      border: none;
+      background: #222;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .register {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">委託平台</div>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="commissions.html">找委託</a>
+    <a href="post.html">發布委託</a>
+    <a href="creators.html">找創作者</a>
+    <a href="login.html">登入</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>登入</h1>
+
+  <div class="field">
+    <label>電子郵件</label>
+    <input type="email" placeholder="請輸入電子郵件">
+  </div>
+
+  <div class="field">
+    <label>密碼</label>
+    <input type="password" placeholder="請輸入密碼">
+  </div>
+
+  <button>登入</button>
+
+  <a class="register" href="register.html">還沒有帳號？註冊</a>
+
+</main>
+
+</body>
+</html>
