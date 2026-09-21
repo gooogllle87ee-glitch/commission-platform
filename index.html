@@ -94,6 +94,14 @@
       border: 1px solid #ddd;
       padding: 18px;
       min-height: 130px;
+      text-decoration: none;
+      color: #222;
+      display: block;
+    }
+
+    .item:hover,
+    .category:hover {
+      background: #f7f7f7;
     }
 
     .item h3 {
@@ -125,7 +133,9 @@
   <div class="logo">委託平台</div>
 
   <nav>
+    <a href="index.html">首頁</a>
     <a href="commissions.html">找委託</a>
+    <a href="post.html">發布委託</a>
     <a href="#">找創作者</a>
     <a href="#">登入</a>
   </nav>
@@ -141,35 +151,35 @@
   <h2>分類</h2>
 
   <div class="categories">
-    <div class="category">插畫</div>
-    <div class="category">設計</div>
-    <div class="category">寫作</div>
-    <div class="category">配音</div>
-    <div class="category">影片</div>
-    <div class="category">其他</div>
+    <a class="category" href="commissions.html">插畫</a>
+    <a class="category" href="commissions.html">設計</a>
+    <a class="category" href="commissions.html">寫作</a>
+    <a class="category" href="commissions.html">配音</a>
+    <a class="category" href="commissions.html">影片</a>
+    <a class="category" href="commissions.html">其他</a>
   </div>
 
   <h2>最新委託</h2>
 
   <div class="list">
 
-    <div class="item">
+    <a class="item" href="commission.html">
       <h3>角色立繪</h3>
       <p>委託人：使用者 A</p>
       <p>預算：NT$1,000</p>
-    </div>
+    </a>
 
-    <div class="item">
+    <a class="item" href="commission.html">
       <h3>Logo 設計</h3>
       <p>委託人：使用者 B</p>
       <p>預算：NT$2,000</p>
-    </div>
+    </a>
 
-    <div class="item">
+    <a class="item" href="commission.html">
       <h3>影片剪輯</h3>
       <p>委託人：使用者 C</p>
       <p>預算：NT$1,500</p>
-    </div>
+    </a>
 
   </div>
 
