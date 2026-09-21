@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>找委託</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      height: 60px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 35px 20px;
+    }
+
+    .search {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 25px;
+    }
+
+    .search input {
+      flex: 1;
+      height: 42px;
+      padding: 0 12px;
+      border: 1px solid #bbb;
+      font-size: 14px;
+    }
+
+    button {
+      height: 42px;
+      padding: 0 20px;
+      border: 1px solid #222;
+      background: #222;
+      color: white;
+      cursor: pointer;
+    }
+
+    .categories {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+
+    .category {
+      border: 1px solid #ddd;
+      padding: 9px 16px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 20px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .item {
+      border: 1px solid #ddd;
+      padding: 18px;
+    }
+
+    .item h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+    }
+
+    .item p {
+      margin: 5px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        margin-left: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">委託平台</div>
+
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="commissions.html">找委託</a>
+    <a href="#">找創作者</a>
+    <a href="#">登入</a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>找委託</h1>
+
+  <div class="search">
+    <input type="text" placeholder="搜尋委託">
+    <button>搜尋</button>
+  </div>
+
+  <div class="categories">
+    <div class="category">全部</div>
+    <div class="category">插畫</div>
+    <div class="category">設計</div>
+    <div class="category">寫作</div>
+    <div class="category">配音</div>
+    <div class="category">影片</div>
+    <div class="category">其他</div>
+  </div>
+
+  <div class="list">
+
+    <div class="item">
+      <h2>角色立繪</h2>
+      <p>預算：NT$1,000</p>
+      <p>委託人：使用者 A</p>
+    </div>
+
+    <div class="item">
+      <h2>Logo 設計</h2>
+      <p>預算：NT$2,000</p>
+      <p>委託人：使用者 B</p>
+    </div>
+
+    <div class="item">
+      <h2>小說封面</h2>
+      <p>預算：NT$800</p>
+      <p>委託人：使用者 C</p>
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>
